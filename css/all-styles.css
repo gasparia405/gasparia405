@@ -23,8 +23,8 @@ header {
 
 header img {
     display: block;
-    width: 100px;
-    height: 100px;
+    width: 6.25rem;
+    height: 6.25rem;
     margin: 1em auto 0.5em auto;
     background-color: #000;
 }
@@ -68,7 +68,7 @@ nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    flex-basis: 50%;
+    flex-basis: 45%;
     padding: 0;
 }
 
@@ -95,13 +95,14 @@ li a:link {
 li a:hover {
     background: #3546e6;
     color: #fff;
-    transition-duration: 0.8s;
+    transition-duration: 0.7s;
 }
+
+/* ----- Star Styles ---------------------- */
 
 /* ----- Body Styles ---------------------- */
 
 main {
-    width: 95%;
     margin: 0 auto;
     display: grid;
 }
@@ -112,6 +113,11 @@ main li {
     font-weight: 500;
     line-height: 1.4;
     color:#2d2d55;
+    margin:0.5rem 0;
+}
+
+main li {
+    margin-left:2rem;
 }
 
 main a {
@@ -119,20 +125,23 @@ main a {
 }
 
 main h4
- {
+{
     color:#2d2d55;
 }
 
 .heading {
-    padding: 0.5rem;
     font-size: 2rem;
     color:#2d2d55;
     text-align: center;
-    margin: 0 auto;
+    margin: 1rem auto;
 }
 
 .heading--header {
     color:#fff;
+}
+
+.heading--body {
+    font-weight: 700;
 }
 
 .heading--article {
@@ -142,15 +151,15 @@ main h4
 section#interests,
 section#work,
 section#career {
-    border-bottom: #BEF 2px solid;
+    border-bottom: #BEF 4px solid;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
-section h1 {
-    font-size: 1.8em;
-    margin: 0 auto;
-    padding: 0.3em;
-    display: block;
-    max-width: 9em;
+.infocard--work {
+    border-bottom: #BEF 2px solid;
+
 }
 
 /* ----- Media Queries ---------------------- */
@@ -160,9 +169,6 @@ section h1 {
         flex-basis: 60%;
     }
 
-    main {
-        width: 85%;
-    }
 }
 
 @media (min-width: 760px) {
@@ -186,7 +192,7 @@ section h1 {
     .sm-menu a {
         vertical-align: center;
         font-size: 16px;
-        width:16px;
+        width:1rem;
         padding: 0.5rem;
     }
 }
