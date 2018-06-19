@@ -4,7 +4,6 @@
 
 body {
     font-family: 'Raleway', Arial, sans-serif;
-    margin: 0;
 }
 
 
@@ -20,12 +19,6 @@ header {
     background: #00a7e4;
     justify-content: space-between;
     
-}
-
-header h1 {
-    margin:1.5rem auto 0 auto;
-    color: #fff;
-    font-size: 1.9rem;
 }
 
 header img {
@@ -46,20 +39,17 @@ header img:hover {
     order:99;
     position: absolute;
     top:20px;
-    right: 12px
+    right: 12px;
 }
 
 .sm-menu a {
-    vertical-align: center;
-    font-size: 24px;
-    width:24px;
+    font-size: 1.5rem;
+    width:2.5rem;
     padding: 0.5rem;
-    margin:auto 0.5em;
-
+    margin:0.2rem 0.5em;
 }
 
-.fa-linkedin,
-.fa-github {
+.fa {
     background: #fff;
     color: #00a7e4;
     border-radius:50%;
@@ -112,7 +102,6 @@ li a:hover {
 
 main {
     width: 95%;
-    padding: 1.5em 0;
     margin: 0 auto;
     display: grid;
 }
@@ -127,36 +116,41 @@ main li {
 
 main a {
     padding: 0.2em;
-
 }
 
-main h1,
-main h2,
-main h3,
 main h4
  {
     color:#2d2d55;
 }
 
-section {
-    border-bottom: #BEF 2px solid;
+.heading {
+    padding: 0.5rem;
+    font-size: 2rem;
+    color:#2d2d55;
+    text-align: center;
+    margin: 0 auto;
 }
 
-section h1,
-section h3 {
-    text-align: center;
+.heading--header {
+    color:#fff;
+}
+
+.heading--article {
+    font-size: 1.3rem;
+}
+
+section#interests,
+section#work,
+section#career {
+    border-bottom: #BEF 2px solid;
 }
 
 section h1 {
     font-size: 1.8em;
-    margin: 1em auto 0.2rem auto;
+    margin: 0 auto;
     padding: 0.3em;
     display: block;
     max-width: 9em;
-}
-
-section h3 {
-    font-size: 1.3em;
 }
 
 /* ----- Media Queries ---------------------- */
@@ -197,121 +191,4 @@ section h3 {
     }
 }
 
-@media (min-width: 1024px) {
-    header {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    header :nth-child(1) { order: 2; }
-    header :nth-child(2) { order: 1; }
-    header :nth-child(3) { order: 3; }
-
-    header h1 {
-        margin: auto 1rem;
-        vertical-align: middle;
-    }
-
-    header img {
-        display:none;
-    }
-
-    header nav {
-        margin-left: auto;
-    }
-
-    .main-nav {
-        
-        flex-wrap: nowrap;
-    }
-    
-    main {
-        /* display:flex;
-        flex-direction: row;
-        flex-wrap: wrap; */
-        width: 90%;
-        margin:auto;
-        max-width: 1200px;
-    }
-
-    section {
-        flex-grow: 1;
-        flex-basis: 45%;
-        border: none;
-    }
-
-    /* section .container{
-        order:1;
-        display: flex;
-        margin:auto;
-        justify-content: space-between;
-        flex-wrap:wrap;
-    } */
-
-    section h1 {
-        font-size: 2.1em;
-        background-color: #fff;
-    }
-
-    section h3 {
-        font-size: 1.4em;
-    }
-    section h4 {
-        text-align:center;
-        margin-top:0.3rem;
-    }
-
-    section#career article{
-        padding: 0 1rem 1rem 1rem;
-        background: #BEF;
-        border-radius: 3px;
-    }
-
-    section#work {
-        order: 2;
-        flex-basis: 100%;
-        border-bottom: solid 2px #3546e6;
-    }
-
-    section#work article{
-        order: 2;
-        flex-basis: 100%;
-        background: #BEF;
-        margin: 1.5em auto;
-    }
-
-    .freelance,
-    .former {
-        flex: 1 0 100%;
-        width: 40%;
-        max-width: 800px;
-        margin: auto;
-        padding-left:1em;
-    }
-
-    .freelance ul,
-    .former ul {
-        list-style-type: circle;
-        padding-left:3em;
-
-    }
-
-    section#languages {
-        order: 3;
-    }
-
-    section#interests {
-        order: 3;
-    }
-    
-    section#interests h1,
-    section#languages h1{
-        margin-top: .8rem;
-    }
-}
-
-@media (min-width: 1281px) {
-    main {
-        width:75%;
-    }
-}
+@media (min-width: 1024px) {}

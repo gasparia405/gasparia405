@@ -11,6 +11,7 @@
 
         <!--Stylesheets-->
         <link rel="stylesheet" href="css/grid.css"/>
+        <link rel="stylesheet" href="css/reset.css"/>
         <link rel="stylesheet" href="css/all-styles.css"/>
 
         <!--Google Fonts-->
@@ -26,7 +27,7 @@
         <!--Header Bar-->
         <header>
             <img src="img/andrew-and-aileen.jpg" alt="Photo of Andrew">
-            <h1>Andrew Gaspari</h1>
+            <h1 class="heading heading--header">Andrew Gaspari</h1>
             
             <!--Main Navigation-->
             <nav>
@@ -50,9 +51,9 @@
 
             <!--Section 1-->
             <section id="interests">
-                <h1>Interests</h1>
-                <article>
-                    <h3>Personal Interests and Hobbies</h3>
+                <h1 class="heading heading--body">Interests</h1>
+                <article class="infocard infocard--interests">
+                    <h3 class="heading heading--article">Personal Interests and Hobbies</h3>
                     <p>
                         I have always been drawn to the outdoors and was finally introduced to birding, my lifelong passion, through the Wildlife Ecology and Conservation program at UMass. Since learning about the 900+ birds that can be found in North America, I have birded in 15 states, soon to be 5 countries. My favorite birding experiences were in Bend, Oregon, where the local water treatment facility treated me to over 140 species of birds.
                     </p>
@@ -61,12 +62,12 @@
 
             <!--Section 2-->
             <section id="work">
-                <h1>Work Experience</h1>
+                <h1 class="heading heading--body">Work Experience</h1>
                 
                 <!--Separate from header-->
-                <div class="container">
-                    <article>
-                            <h3>Freelance Programmer and Web Developer</h3>
+                <div class="container container--work">
+                    <article class="infocard infocard--work">
+                            <h3 class="heading heading--article">Freelance Programmer and Web Developer</h3>
                             <h4>Hartford, CT</h4>
                             <p>May 2017 - Current</p>
                             <p>
@@ -82,15 +83,15 @@
                                     <li>CMS Content Management - HTML, Markdown, Wordpress</li>
                                 </ul>
                                 <p>Check out my portfolio projects:</p>
-                                <ul>
+                                <ul class="list list--projects">
                                     <li><a href='http://www.github.com/gasparia405/quizSite'>Quiz Web App</a> - HTML/CSS/JS</li>
                                     <li><a href='http://www.github.com/gasparia405/ReservationApp'>RSVP Web App</a> - HTML/CSS/JS</li>
                                 </ul>
                             </div>
                         </article> 
 
-                    <article>
-                        <h3>Data Entry Specialist</h3>
+                    <article class="infocard infocard--work">
+                        <h3 class="heading heading--article">Data Entry Specialist</h3>
                         <h4>My-Springboard -- Avon, CT</h4>
                         <p>October 2017 - April 2018</p>
                         <p>
@@ -98,16 +99,16 @@
                         </p>
 
                         <p>
-                            My other projects included the following skills:
-                            <ul>
+                            My side projects to forward company goals:
+                            <ul class="list list--projects">
                                 <li>Web scraping email addresses with Python</li>
                                 <li>Researching potential clients</li> 
                             </ul>
                         </p>
                     </article>
 
-                    <article>
-                            <h3>Survey Crew Leader - Endangered Bird Surveys</h3>
+                    <article class="infocard infocard--work">
+                            <h3 class="heading heading--article">Survey Crew Leader - Endangered Bird Surveys</h3>
                             <h4>Turnstone Environmental Consulting -- Tillamook, OR</h4>
                             <p>April 2017 - August 2017</p>
                             <p>
@@ -124,25 +125,25 @@
 
             <!--Section 3-->
             <section id="career">
-                <h1>Career Goals</h1>
+                <h1 class="heading heading--body">Career Goals</h1>
 
-                <div class="container">
-                    <article>
-                            <h3>Wildlife Biology</h3>
+                <div class="container container--goals">
+                    <article class="infocard infocard--goal">
+                            <h3 class="heading heading--article">Wildlife Biology</h3>
                             <p>
                                 I am passionate about using technology to advance the field of Wildlife Biology. There is so much data from the past and the present that could be analyzed to help us deepen our understanding of our country's natural history, and I would love to build the tools necessary to get through that backlog.
                             </p>
                     </article>
 
-                    <article>
-                        <h3>Data Science</h3>
+                    <article class="infocard infocard--goal">
+                        <h3 class="heading heading--article">Data Science</h3>
                         <p>
                             I am interested in utilizing data science to help clean and analyze data in the Wildlife Biology field. There is a huge amount of raster data that could potentially be analyzed using machine learning techniques, such as categorizing infrared values from satellites to measure vegetation cover by identifying plant or tree types.
                         </p>
                     </article>
 
-                    <article>
-                        <h3>Software/Web Development</h3>
+                    <article class="infocard infocard--goal">
+                        <h3 class="heading heading--article">Software/Web Development</h3>
                         <p>
                             I am using my Python and Web Development skills to brainstorm and build apps to help with data collection, cleaning, access and presentation. I like programming in Python because of the simplicity of the language as well as the vast number of resources provided by the open source Python community.
                         </p>
@@ -153,16 +154,16 @@
 
             <!--Section 4-->
             <section id="languages">
-                <h1>Languages</h1>
-                <h3>Click each language to find out my skill level</h3>
-                <ul>
-                    <li>Python</li>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>JavaScript</li>
-                    <li>Java</li>
-                    <li>XML</li>
-                    <li>C#</li>    
+                <h1 class="heading heading--body">Languages</h1>
+                <!-- <h3>Click each language to find out my skill level</h3> -->
+                <ul class="list list--skillset">
+                    <li class="lang lang--strong">Python</li>
+                    <li class="lang lang--strong">HTML5</li>
+                    <li class="lang lang--intermediate">CSS3</li>
+                    <li class="lang lang--intermediate">JavaScript</li>
+                    <li class="lang lang--intermediate">Java</li>
+                    <li class="lang lang--intermediate">XML</li>
+                    <li class="lang lang--novice">C#</li>    
                 </ul>
             </section>
         </main>
