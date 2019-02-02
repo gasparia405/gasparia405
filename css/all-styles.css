@@ -173,6 +173,6 @@ section > h4 {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        max-height: 20rem;
+        max-height: 25rem;
     }
 }
